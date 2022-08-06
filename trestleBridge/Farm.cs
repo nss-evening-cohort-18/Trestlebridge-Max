@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using trestleBridge;
 
-namespace trestleBridge
+namespace trestleBridge.Models.Facilities
 {
     public class Farm
     {
