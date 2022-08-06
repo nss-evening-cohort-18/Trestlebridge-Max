@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace trestleBridge.Interfaces
 {
-    public interface IMeatProducing
+    public interface Compost
     {
-        double Butcher();
+        double Collect();
     }
 }
+

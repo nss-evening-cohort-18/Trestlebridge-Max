@@ -1,1 +1,7 @@
 ﻿
+
+
+public interface IResource
+{
+
+}
