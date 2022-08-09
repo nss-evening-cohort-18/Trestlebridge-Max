@@ -14,7 +14,7 @@ namespace trestleBridge.Actions
             // Console.Clear();
             for (int i = 0; i < farm.NaturalFields.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. Grazing Field");
+                Console.WriteLine($"{i + 1}. Natural Field");
             }
             Console.WriteLine();
             // How can I output the type of animal chosen here?
