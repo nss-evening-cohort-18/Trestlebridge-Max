@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace trestleBridge.Interfaces
 {
-<<<<<<<< HEAD:trestleBridge/Interfaces/IFeeding.cs
-    public interface IFeeding
-========
 
-    public interface IFeed
->>>>>>>> Seeds:trestleBridge/Interfaces/IFeed.cs
+    public interface IFeeding
+
     {
         double FeedPerDay { get; set; }
         string Type { get; }
         void Feed();
     }
+
 }
+
+   

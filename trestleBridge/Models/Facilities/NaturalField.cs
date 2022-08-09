@@ -34,7 +34,7 @@ namespace trestleBridge.Models.Facilities
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();
-            string shortId = $"{this._id.ToString().Substring(this._id.ToString().Length - 2)}";
+            string shortId = $"{this._id.ToString().Substring(this._id.ToString().Length - 6)}";
             output.Append($"Natural field {shortId} has {this._plants.Count} plants\n");
             this._plants.ForEach(a => output.Append($"   {a}\n"));
             return output.ToString();
