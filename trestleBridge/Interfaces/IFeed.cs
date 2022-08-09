@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace trestleBridge.Interfaces
 {
 
-    public interface IGrazing
+    public interface IFeed
     {
-        double GrassPerDay { get; set; }
+        double FeedPerDay { get; set; }
         string Type { get; }
-        void Graze();
+        void Feed();
     }
 }
