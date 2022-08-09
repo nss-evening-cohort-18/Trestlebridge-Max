@@ -11,7 +11,6 @@ namespace trestleBridge.Interfaces
 
     {
         double FeedPerDay { get; set; }
-        string Type { get; }
         void Feed();
     }
 
