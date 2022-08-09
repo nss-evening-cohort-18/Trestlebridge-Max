@@ -7,11 +7,14 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Seeds
 {
-    internal class Sunflower : IResource, ISeedProducing, ICompostProducing
+    internal class Sunflower : IResource, IFlower, ISeedProducing, ICompostProducing
     {
         private Guid _id = Guid.NewGuid();
         private double _seedProduced = 650;
         private double _compostProduced = 21.6;
+
+        public string Type { get; } = "Sunflower";
+
         private string _shortId
         {
             get
