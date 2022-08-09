@@ -24,9 +24,34 @@ namespace trestleBridge
             Console.WriteLine(typeof(T).ToString());
             switch (typeof(T).ToString())
             {
+                case "Chicken":
+                    ChickenHouse[index].AddResource((IFeeding)resource);
+                    break;
+
+                case "Duck":
+                    DuckHouse[index].AddResource((IFeeding)resource);
+                    break;
+
                 case "Cow":
                     GrazingFields[index].AddResource((IFeeding)resource);
                     break;
+
+                case "Goat":
+                    GrazingFields[index].AddResource((IFeeding)resource);
+                    break;
+
+                case "Ostrich":
+                    GrazingFields[index].AddResource((IFeeding)resource);
+                    break;
+
+                case "Pig":
+                    GrazingFields[index].AddResource((IFeeding)resource);
+                    break;
+
+                case "Sheep":
+                    GrazingFields[index].AddResource((IFeeding)resource);
+                    break;
+
                 default:
                     break;
             }

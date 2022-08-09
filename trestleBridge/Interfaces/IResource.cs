@@ -1,6 +1,5 @@
 ﻿
 
-
 public interface IResource
 {
 
