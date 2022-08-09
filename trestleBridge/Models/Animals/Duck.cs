@@ -7,12 +7,12 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Animals
 {
-    public class Chicken : IResource, IFeeding, IEgg, IFeathers, IMeatProducing
+    public class Duck : IResource, IFeeding, IEgg, IFeathers
     {
         private Guid _id = Guid.NewGuid();
-        private double _meatProduced = 1.5;
-        private double _feathersProduced = 0.5;
-        private double _eggsProduced = 7;
+
+        private double _feathersProduced = 0.75;
+        private int _eggsProduced = 6;
 
         private string _shortId
         {
@@ -23,18 +23,18 @@ namespace trestleBridge.Models.Animals
         }
 
         public double FeedPerDay { get; set; } = 4.1;
-        public string Type { get; } = "Goat";
+        public string Type { get; } = "Duck";
 
         // Methods
         public void Feed()
         {
-            Console.WriteLine($"Chicken {this._shortId} just ate {this.FeedPerDay}kg of grass");
+            Console.WriteLine($"Duck {this._shortId} just ate {this.FeedPerDay}kg of grass");
         }
 
 
         public override string ToString()
         {
-            return $"Chicken {this._shortId}. BAWK";
+            return $"Duck {this._shortId}. BAACK";
         }
 
 
@@ -48,9 +48,5 @@ namespace trestleBridge.Models.Animals
             return _feathersProduced;
         }
 
-        public double Butcher()
-        {
-            return _meatProduced;
-        }
     }
 }
