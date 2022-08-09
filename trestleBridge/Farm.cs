@@ -4,8 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using trestleBridge.Models.Facilities;
+using trestleBridge.Interfaces;
 
 namespace trestleBridge
+
+
 {
     public class Farm
     {
@@ -21,7 +25,7 @@ namespace trestleBridge
             switch (typeof(T).ToString())
             {
                 case "Cow":
-                    GrazingFields[index].AddResource((IGrazing)resource);
+                    GrazingFields[index].AddResource((IFeeding)resource);
                     break;
                 default:
                     break;

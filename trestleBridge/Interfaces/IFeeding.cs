@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace trestleBridge.Interfaces
 {
-    public interface IMeatProducing
+    public interface IFeeding
     {
-        double Butcher();
+        double FeedPerDay { get; set; }
+        string Type { get; }
+        void Feed();
     }
 }

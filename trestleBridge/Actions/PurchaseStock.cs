@@ -1,5 +1,7 @@
 ﻿using System;
 
+using trestleBridge.Models.Animals;
+
 namespace trestleBridge.Actions
 {
     public class PurchaseStock

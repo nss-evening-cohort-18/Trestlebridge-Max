@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace trestleBridge.Interfaces
 {
-    public interface IGrazing
+    public interface IFeathers
     {
-        double GrassPerDay { get; set; }
-        void Graze();
+        double Pluck();
     }
 }

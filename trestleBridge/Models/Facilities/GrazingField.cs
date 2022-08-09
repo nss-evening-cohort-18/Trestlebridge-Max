@@ -7,12 +7,12 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Facilities
 {
-    public class GrazingField : IFacility<IGrazing>
+    public class GrazingField : IFacility<IFeeding>
     {
         private int _capacity = 50;
         private Guid _id = Guid.NewGuid();
 
-        private List<IGrazing> _animals = new List<IGrazing>();
+        private List<IFeeding> _animals = new List<IFeeding>();
 
         public double Capacity
         {
@@ -22,13 +22,13 @@ namespace trestleBridge.Models.Facilities
             }
         }
 
-        public void AddResource(IGrazing animal)
+        public void AddResource(IFeeding animal)
         {
             // TODO: implement this...
             throw new NotImplementedException();
         }
 
-        public void AddResource(List<IGrazing> animals)
+        public void AddResource(List<IFeeding> animals)
         {
             // TODO: implement this...
             throw new NotImplementedException();

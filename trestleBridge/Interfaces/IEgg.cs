@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace trestleBridge.Interfaces
 {
-    public interface IMeatProducing
+    public interface IEgg
     {
-        double Butcher();
+        double GetEggs();
     }
 }
