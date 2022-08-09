@@ -7,7 +7,7 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Animals
 {
-    public class Cow : IResource, IGrazing, IMeatProducing
+    public class Cow : IResource, IFeeding, IMeatProducing
     {
         private Guid _id = Guid.NewGuid();
         private double _meatProduced = 18.25;
@@ -19,15 +19,11 @@ namespace trestleBridge.Models.Animals
             }
         }
 
-        public double GrassPerDay { get; set; } = 5.4;
         public string Type { get; } = "Cow";
+        public double FeedPerDay { get; set; } = 5.4;
 
         // Methods
-        public void Graze()
-        {
-            Console.WriteLine($"Cow {this._shortId} just ate {this.GrassPerDay}kg of grass");
-        }
-
+       
         public double Butcher()
         {
             return _meatProduced;
@@ -35,6 +31,11 @@ namespace trestleBridge.Models.Animals
         public override string ToString()
         {
             return $"Cow {this._shortId}. Mooo!";
+        }
+
+        public void Feed()
+        {
+            Console.WriteLine($"Cow {this._shortId} just ate {this.FeedPerDay}kg of grass");
         }
     }
 }

@@ -25,7 +25,7 @@ namespace trestleBridge
             switch (typeof(T).ToString())
             {
                 case "Cow":
-                    GrazingFields[index].AddResource((IGrazing)resource);
+                    GrazingFields[index].AddResource((IFeeding)resource);
                     break;
                 default:
                     break;
