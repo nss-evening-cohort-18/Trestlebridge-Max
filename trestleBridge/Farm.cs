@@ -14,6 +14,8 @@ namespace trestleBridge
     public class Farm
     {
         public List<GrazingField> GrazingFields { get; } = new List<GrazingField>();
+        public List<NaturalField> NaturalFields { get; } = new List<NaturalField>();
+        public List<PlowedField> PlowedFields { get; } = new List<PlowedField>();
 
         /*
             This method must specify the correct product interface of the
@@ -36,6 +38,18 @@ namespace trestleBridge
         {
             GrazingFields.Add(field);
         }
+
+        public void AddNaturalField(NaturalField field)
+        {
+            NaturalFields.Add(field);
+        }
+
+        public void AddPlowedField(PlowedField field)
+        {
+            PlowedFields.Add(field);
+        }
+
+
 
         public override string ToString()
         {

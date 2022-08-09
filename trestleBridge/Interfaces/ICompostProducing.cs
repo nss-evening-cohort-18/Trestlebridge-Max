@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace trestleBridge.Interfaces
 {
-    public interface ICompost
+    public interface ICompostProducing
     {
         double Collect();
     }

@@ -7,9 +7,9 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Facilities
 {
-    internal class NaturalField : IFacility<IFlower>
+    internal class PlowedField : IFacility<IFlower>
     {
-        private int _capacity = 60;
+        private int _capacity = 65;
         private Guid _id = Guid.NewGuid();
 
         private List<IFlower> _plants = new List<IFlower>();
@@ -41,3 +41,4 @@ namespace trestleBridge.Models.Facilities
         }
     }
 }
+
