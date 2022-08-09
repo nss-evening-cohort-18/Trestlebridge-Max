@@ -6,7 +6,7 @@ namespace trestleBridge.Actions
 {
 	public class ChooseChickenHouse
 	{
-		public ChooseChickenHouse(Farm farm, IFeeding animal)
+		public ChooseChickenHouse(Farm farm, IResource animal)
 		{
             // Console.Clear();
             for (int i = 0; i < farm.ChickenHouse.Count; i++)
