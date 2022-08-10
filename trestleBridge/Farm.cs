@@ -55,15 +55,15 @@ namespace trestleBridge
                     break;
 
                 case "Sesame":
-                    PlowedFields[index].AddResource((IResource)resource);
+                    PlowedFields[index].AddResource(resource);
                     break;
                 
                 case "Sunflower":
-                    PlowedFields[index].AddResource((IResource)resource);
+                    PlowedFields[index].AddResource(resource);
                     break;
                 
                 case "Wildflower":
-                    NaturalFields[index].AddResource((IResource)resource);
+                    NaturalFields[index].AddResource(resource);
                     break;
                 
                 default:

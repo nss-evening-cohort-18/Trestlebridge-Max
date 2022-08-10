@@ -7,7 +7,7 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Facilities
 {
-    internal class NaturalField : IFacility<IResource>
+    public class NaturalField : IFacility<IResource>
     {
         private int _capacity = 60;
         private Guid _id = Guid.NewGuid();
@@ -22,13 +22,12 @@ namespace trestleBridge.Models.Facilities
         }
         public void AddResource(IResource plant)
         {
-            // TODO: implement this...
+
             _plants.Add(plant);
         }
 
         public void AddResource(List<IResource> plant)
         {
-            // TODO: implement this...
             _plants.Add((IResource)plant);
         }
         public override string ToString()
