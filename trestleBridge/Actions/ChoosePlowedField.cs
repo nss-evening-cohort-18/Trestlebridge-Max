@@ -7,7 +7,7 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Actions
 {
-    internal class ChoosePlowedField
+    public class ChoosePlowedField
     {
         public static void CollectInput(Farm farm, IResource plant)
         {
