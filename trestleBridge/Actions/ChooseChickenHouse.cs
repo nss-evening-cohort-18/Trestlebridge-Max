@@ -9,7 +9,7 @@ namespace trestleBridge.Actions
 		public ChooseChickenHouse(Farm farm, IResource animal)
 		{
             // Console.Clear();
-            for (int i = 0; i < farm.ChickenHouse.Count; i++)
+            for (int i = 0; i < farm.ChickenHouses.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. Chicken House");
             }
@@ -20,7 +20,7 @@ namespace trestleBridge.Actions
             Console.Write("> ");
             int choice = Int32.Parse(Console.ReadLine());
 
-            farm.ChickenHouse[choice].AddResource(animal);
+            farm.ChickenHouses[choice].AddResource(animal);
 
             /*
                 Couldn't get this to work. Can you?
