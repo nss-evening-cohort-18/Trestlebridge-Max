@@ -6,7 +6,7 @@ namespace trestleBridge.Actions
 {
     public class ChooseGrazingField
     {
-        public static void CollectInput(Farm farm, IFeeding animal)
+        public static void CollectInput(Farm farm, IResource animal)
         {
             // Console.Clear();
             for (int i = 0; i < farm.GrazingFields.Count; i++)
