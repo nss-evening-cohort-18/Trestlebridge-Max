@@ -23,13 +23,13 @@ namespace trestleBridge.Models.Facilities
         public void AddResource(IResource plant)
         {
             // TODO: implement this...
-            throw new NotImplementedException();
+            _plants.Add(plant);
         }
 
         public void AddResource(List<IResource> plant)
         {
             // TODO: implement this...
-            throw new NotImplementedException();
+            _plants.Add((IResource)plant);
         }
         public override string ToString()
         {
