@@ -54,6 +54,18 @@ namespace trestleBridge
                     GrazingFields[index].AddResource(resource);
                     break;
 
+                case "Sesame":
+                    PlowedFields[index].AddResource((IResource)resource);
+                    break;
+                
+                case "Sunflower":
+                    PlowedFields[index].AddResource((IResource)resource);
+                    break;
+                
+                case "Wildflower":
+                    NaturalFields[index].AddResource((IResource)resource);
+                    break;
+                
                 default:
                     break;
             }
