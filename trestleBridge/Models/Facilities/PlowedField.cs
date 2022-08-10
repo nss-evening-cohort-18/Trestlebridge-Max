@@ -7,7 +7,7 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Facilities
 {
-    internal class PlowedField : IFacility<IResource>
+    public class PlowedField : IFacility<IResource>
     {
         private int _capacity = 65;
         private Guid _id = Guid.NewGuid();
@@ -22,20 +22,18 @@ namespace trestleBridge.Models.Facilities
         }
         public void AddResource(IResource plant)
         {
-            // TODO: implement this...
-            throw new NotImplementedException();
+            _plants.Add(plant);
         }
 
         public void AddResource(List<IResource> plant)
         {
-            // TODO: implement this...
-            throw new NotImplementedException();
+            _plants.Add((IResource)plant);
         }
         public override string ToString()
         {
             StringBuilder output = new StringBuilder();
             string shortId = $"{this._id.ToString().Substring(this._id.ToString().Length - 6)}";
-            output.Append($"Natural field {shortId} has {this._plants.Count} plants\n");
+            output.Append($"Plowed field {shortId} has {this._plants.Count} plants\n");
             this._plants.ForEach(a => output.Append($"   {a}\n"));
             return output.ToString();
         }

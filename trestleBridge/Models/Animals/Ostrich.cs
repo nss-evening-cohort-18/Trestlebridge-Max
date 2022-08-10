@@ -22,7 +22,6 @@ namespace trestleBridge.Models.Animals
         }
         public double FeedPerDay { get; set; } = 2.3;
         public string Type { get; } = "Ostrich";
-        public double FeedPerDay { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         // Methods
         public void Graze()
