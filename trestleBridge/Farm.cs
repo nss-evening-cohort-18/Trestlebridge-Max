@@ -31,11 +31,11 @@ namespace trestleBridge
             switch (typeof(T).ToString())
             {
                 case "Chicken":
-                    ChickenHouses[index].AddResource((IResource)resource);
+                    ChickenHouses[index].AddResource(resource);
                     break;
 
                 case "Duck":
-                    DuckHouses[index].AddResource((IResource)resource);
+                    DuckHouses[index].AddResource(resource);
                     break;
 
                 case "Cow":

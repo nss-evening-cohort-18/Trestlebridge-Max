@@ -49,7 +49,7 @@ namespace trestleBridge.Actions
                     break;
 
                 case 7:
-                    ChooseChickenHouse.CollectInput(farm, new Sheep());
+                    ChooseGrazingField.CollectInput(farm, new Sheep());
                     break;
 
                 default:
