@@ -7,12 +7,12 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Facilities
 {
-    internal class NaturalField : IFacility<IFlower>
+    internal class NaturalField : IFacility<IResource>
     {
         private int _capacity = 60;
         private Guid _id = Guid.NewGuid();
 
-        private List<IFlower> _plants = new List<IFlower>();
+        private List<IResource> _plants = new List<IResource>();
         public double Capacity
         {
             get
@@ -20,13 +20,13 @@ namespace trestleBridge.Models.Facilities
                 return _capacity;
             }
         }
-        public void AddResource(IFlower plant)
+        public void AddResource(IResource plant)
         {
             // TODO: implement this...
             throw new NotImplementedException();
         }
 
-        public void AddResource(List<IFlower> plant)
+        public void AddResource(List<IResource> plant)
         {
             // TODO: implement this...
             throw new NotImplementedException();
