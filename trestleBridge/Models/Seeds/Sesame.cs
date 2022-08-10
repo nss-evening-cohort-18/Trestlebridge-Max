@@ -7,7 +7,7 @@ using trestleBridge.Interfaces;
 
 namespace trestleBridge.Models.Seeds
 {
-    internal class Sesame : IResource, IFlower, ISeedProducing
+    internal class Sesame : IResource, ISeedProducing
     {
         private Guid _id = Guid.NewGuid();
         private double _seedProduced = 650;

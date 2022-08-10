@@ -9,7 +9,7 @@ namespace trestleBridge.Actions
 {
     internal class ChooseNaturalField
     {
-        public static void CollectInput(Farm farm, IFlower plant)
+        public static void CollectInput(Farm farm, IResource plant)
         {
             // Console.Clear();
             for (int i = 0; i < farm.NaturalFields.Count; i++)
