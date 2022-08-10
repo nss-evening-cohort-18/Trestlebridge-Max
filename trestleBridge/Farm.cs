@@ -39,25 +39,37 @@ namespace trestleBridge
                     break;
 
                 case "Cow":
-                    GrazingFields[index].AddResource((IResource)resource);
+                    GrazingFields[index].AddResource(resource);
                     break;
 
                 case "Goat":
-                    GrazingFields[index].AddResource((IResource)resource);
+                    GrazingFields[index].AddResource(resource);
                     break;
 
                 case "Ostrich":
-                    GrazingFields[index].AddResource((IResource)resource);
+                    GrazingFields[index].AddResource(resource);
                     break;
 
                 case "Pig":
-                    GrazingFields[index].AddResource((IResource)resource);
+                    GrazingFields[index].AddResource(resource);
                     break;
 
                 case "Sheep":
-                    GrazingFields[index].AddResource((IResource)resource);
+                    GrazingFields[index].AddResource(resource);
                     break;
 
+                case "Sesame":
+                    PlowedFields[index].AddResource((IResource)resource);
+                    break;
+                
+                case "Sunflower":
+                    PlowedFields[index].AddResource((IResource)resource);
+                    break;
+                
+                case "Wildflower":
+                    NaturalFields[index].AddResource((IResource)resource);
+                    break;
+                
                 default:
                     break;
             }
