@@ -17,6 +17,10 @@ namespace trestleBridge
         public List<NaturalField> NaturalFields { get; } = new List<NaturalField>();
         public List<PlowedField> PlowedFields { get; } = new List<PlowedField>();
 
+        public List<ChickenHouse> ChickenHouses { get; } = new List<ChickenHouse>();
+
+        public List<DuckHouse> DuckHouses { get; } = new List<DuckHouse>();
+
         /*
             This method must specify the correct product interface of the
             resource being purchased.
@@ -27,11 +31,11 @@ namespace trestleBridge
             switch (typeof(T).ToString())
             {
                 case "Chicken":
-                    ChickenHouse[index].AddResource(resource);
+                    ChickenHouses[index].AddResource((IResource)resource);
                     break;
 
                 case "Duck":
-                    DuckHouse[index].AddResource(resource);
+                    DuckHouses[index].AddResource((IResource)resource);
                     break;
 
                 case "Cow":
