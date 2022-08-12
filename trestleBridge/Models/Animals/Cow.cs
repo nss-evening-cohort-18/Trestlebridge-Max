@@ -27,7 +27,7 @@ namespace trestleBridge.Models.Animals
         public void Graze()
         {
             Console.WriteLine($"Cow {this._shortId} just ate {this.GrassPerDay}kg of grass");
-        }
+        }   
 
         public double Butcher()
         {

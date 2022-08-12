@@ -100,14 +100,19 @@ namespace trestleBridge
             DuckHouses.Add(house);
         }
 
-
-
-
         public override string ToString()
         {
             StringBuilder report = new StringBuilder();
 
             GrazingFields.ForEach(gf => report.Append(gf));
+
+            ChickenHouses.ForEach(gf => report.Append(gf));
+
+            DuckHouses.ForEach(gf => report.Append(gf));
+
+            NaturalFields.ForEach(gf => report.Append(gf));
+
+            PlowedFields.ForEach(gf => report.Append(gf));
 
             return report.ToString();
         }
