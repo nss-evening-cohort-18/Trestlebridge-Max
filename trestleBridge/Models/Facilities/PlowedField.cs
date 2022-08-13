@@ -25,9 +25,9 @@ namespace trestleBridge.Models.Facilities
             _plants.Add(plant);
         }
 
-        public void AddResource(List<IResource> plant)
+        public void AddResource(List<IResource> plants)
         {
-            _plants.Add((IResource)plant);
+            _plants.Add((IResource)plants);
         }
         public override string ToString()
         {

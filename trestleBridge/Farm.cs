@@ -106,13 +106,13 @@ namespace trestleBridge
 
             GrazingFields.ForEach(gf => report.Append(gf));
 
-            ChickenHouses.ForEach(gf => report.Append(gf));
+            ChickenHouses.ForEach(ch => report.Append(ch));
 
-            DuckHouses.ForEach(gf => report.Append(gf));
+            DuckHouses.ForEach(dh => report.Append(dh));
 
-            NaturalFields.ForEach(gf => report.Append(gf));
+            NaturalFields.ForEach(nf => report.Append(nf));
 
-            PlowedFields.ForEach(gf => report.Append(gf));
+            PlowedFields.ForEach(pf => report.Append(pf));
 
             return report.ToString();
         }
