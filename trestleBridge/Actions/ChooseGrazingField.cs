@@ -8,13 +8,13 @@ namespace trestleBridge.Actions
     {
         public static void CollectInput(Farm farm, IResource animal)
         {
-            // Console.Clear();
+            Console.Clear();
             for (int i = 0; i < farm.GrazingFields.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. Grazing Field");
             }
             Console.WriteLine();
-            // How can I output the type of animal chosen here?
+            
             Console.WriteLine($"Place {animal.Type.ToLower()} where?");
 
             Console.Write("> ");
@@ -22,11 +22,6 @@ namespace trestleBridge.Actions
 
             farm.GrazingFields[choice - 1].AddResource(animal);
 
-            /*
-                Couldn't get this to work. Can you?
-                Stretch goal. Only if the app is fully functional.
-             */
-            //farm.PurchaseResource<IResource>(animal, choice);
         }
     }
 }

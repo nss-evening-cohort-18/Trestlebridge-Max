@@ -25,7 +25,6 @@ namespace trestleBridge.Models.Animals
         public double FeedPerDay { get; set; } = 4.1;
         public string Type { get; } = "Duck";
 
-        // Methods
         public void Feed()
         {
             Console.WriteLine($"Duck {this._shortId} just ate {this.FeedPerDay}kg of grass");

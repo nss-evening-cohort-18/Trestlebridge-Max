@@ -22,8 +22,6 @@ namespace trestleBridge.Models.Animals
         public string Type { get; } = "Pig";
         public double FeedPerDay { get; set; } = 8.4;
 
-        // Methods
-
         public double Butcher()
         {
             return _meatProduced;

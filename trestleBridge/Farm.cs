@@ -21,10 +21,6 @@ namespace trestleBridge
 
         public List<DuckHouse> DuckHouses { get; } = new List<DuckHouse>();
 
-        /*
-            This method must specify the correct product interface of the
-            resource being purchased.
-         */
         public void PurchaseResource<T>(IResource resource, int index)
         {
             Console.WriteLine(typeof(T).ToString());
